@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import EventItem from './EventItem';
 
@@ -34,6 +35,10 @@ class Events extends Component {
       <ul className="collection">
         {eventItems}
       </ul> 
+       <br />
+      
+      <div className="right"><Link to="/events/add"> <i className="fa fa-plus-circle"></i>Add Event</Link></div>
+      
       </div>
     );
   }
